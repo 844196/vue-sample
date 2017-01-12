@@ -16,7 +16,7 @@ Vue.use(VueMaterial)
 Vue.material.registerTheme({
   default: {
     primary: 'pink',
-    accent: 'deep-orange'
+    accent: 'pink'
   }
 });
 

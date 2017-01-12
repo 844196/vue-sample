@@ -20,6 +20,12 @@
               label スケジュール名
               md-input(v-model='value.name')
         md-list-item
+          md-icon speaker_notes
+          .md-list-text-container
+            md-input-container
+              label 発話内容
+              md-input(v-model='value.speech_text')
+        md-list-item
           md-icon schedule
           .md-list-text-container
             md-input-container

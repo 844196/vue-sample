@@ -1,16 +1,10 @@
 import Vue from 'vue'
-import VueRouter from 'vue-router'
 import VueMaterial from 'vue-material'
 import 'vue-material/dist/vue-material.css'
 
 import App from './App'
-import routes from './routes'
-
-Vue.use(VueRouter)
-const router = new VueRouter({
-  routes,
-  mode: 'history'
-})
+import router from './router'
+import store from './store'
 
 Vue.use(VueMaterial)
 Vue.material.registerTheme({
@@ -24,5 +18,6 @@ new Vue({
   el: '#app',
   template: '<App/>',
   components: { App },
-  router
+  router,
+  store
 })
